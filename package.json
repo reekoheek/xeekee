@@ -1,0 +1,20 @@
+{
+  "name": "bono-arch",
+  "version": "0.0.0",
+  "description": "",
+  "main": "paxfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "pax-php": "^0.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ganesha <reekoheek@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "pax-php": "^0.1.1",
+    "moment": "^2.6.0",
+    "mustache": "^0.8.1"
+  }
+}

@@ -1,0 +1,549 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "437755aaab2338e428a01bfd373dd386",
+    "packages": [
+        {
+            "name": "filp/whoops",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/filp/whoops.git",
+                "reference": "ae05259236204ccf904a94e5b0d96df8d4351da5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/ae05259236204ccf904a94e5b0d96df8d4351da5",
+                "reference": "ae05259236204ccf904a94e5b0d96df8d4351da5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Whoops": "src/"
+                },
+                "classmap": [
+                    "src/deprecated"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Filipe Dobreira",
+                    "homepage": "https://github.com/filp",
+                    "role": "Developer"
+                }
+            ],
+            "description": "php error handling for cool kids",
+            "homepage": "https://github.com/filp/whoops",
+            "keywords": [
+                "error",
+                "exception",
+                "handling",
+                "library",
+                "silex-provider",
+                "whoops",
+                "zf2"
+            ],
+            "time": "2014-05-13 05:05:11"
+        },
+        {
+            "name": "guzzle/guzzle",
+            "version": "v3.8.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "4de0618a01b34aa1c8c33a3f13f396dcd3882eba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/4de0618a01b34aa1c8c33a3f13f396dcd3882eba",
+                "reference": "4de0618a01b34aa1c8c33a3f13f396dcd3882eba",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3.3",
+                "symfony/event-dispatcher": ">=2.1"
+            },
+            "replace": {
+                "guzzle/batch": "self.version",
+                "guzzle/cache": "self.version",
+                "guzzle/common": "self.version",
+                "guzzle/http": "self.version",
+                "guzzle/inflection": "self.version",
+                "guzzle/iterator": "self.version",
+                "guzzle/log": "self.version",
+                "guzzle/parser": "self.version",
+                "guzzle/plugin": "self.version",
+                "guzzle/plugin-async": "self.version",
+                "guzzle/plugin-backoff": "self.version",
+                "guzzle/plugin-cache": "self.version",
+                "guzzle/plugin-cookie": "self.version",
+                "guzzle/plugin-curlauth": "self.version",
+                "guzzle/plugin-error-response": "self.version",
+                "guzzle/plugin-history": "self.version",
+                "guzzle/plugin-log": "self.version",
+                "guzzle/plugin-md5": "self.version",
+                "guzzle/plugin-mock": "self.version",
+                "guzzle/plugin-oauth": "self.version",
+                "guzzle/service": "self.version",
+                "guzzle/stream": "self.version"
+            },
+            "require-dev": {
+                "doctrine/cache": "*",
+                "monolog/monolog": "1.*",
+                "phpunit/phpunit": "3.7.*",
+                "psr/log": "1.0.*",
+                "symfony/class-loader": "*",
+                "zendframework/zend-cache": "<2.3",
+                "zendframework/zend-log": "<2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Guzzle": "src/",
+                    "Guzzle\\Tests": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Guzzle Community",
+                    "homepage": "https://github.com/guzzle/guzzle/contributors"
+                }
+            ],
+            "description": "Guzzle is a PHP HTTP client library and framework for building RESTful web service clients",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "time": "2014-01-28 22:29:15"
+        },
+        {
+            "name": "reekoheek/bono-auth",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reekoheek/bono-auth.git",
+                "reference": "4f93df03905892378a881572fe79affab4b03faf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reekoheek/bono-auth/zipball/4f93df03905892378a881572fe79affab4b03faf",
+                "reference": "4f93df03905892378a881572fe79affab4b03faf",
+                "shasum": ""
+            },
+            "require": {
+                "guzzle/guzzle": "~3.8.1",
+                "slim/slim": "2.3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "ROH\\BonoAuth": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ganesha",
+                    "email": "reekoheek@gmail.com",
+                    "homepage": "http://xinix.co.id",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Bono Auth",
+            "time": "2014-06-09 07:07:38"
+        },
+        {
+            "name": "reekoheek/jsonkit",
+            "version": "0.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reekoheek/php-jsonkit.git",
+                "reference": "fc7769ba88af09be6cf7087ff1736ad1002b3b75"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reekoheek/php-jsonkit/zipball/fc7769ba88af09be6cf7087ff1736ad1002b3b75",
+                "reference": "fc7769ba88af09be6cf7087ff1736ad1002b3b75",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.22"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JsonKit": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ganesha",
+                    "email": "reekoheek@gmail.com",
+                    "homepage": "http://xinix.co.id",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Aprianto Pramana Putra",
+                    "email": "apriantopramanaputra@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "time": "2014-06-02 13:46:37"
+        },
+        {
+            "name": "reekoheek/util",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reekoheek/php-util.git",
+                "reference": "62d2608bb4530efcf8f68b2de8bb6af0820f1fa0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reekoheek/php-util/zipball/62d2608bb4530efcf8f68b2de8bb6af0820f1fa0",
+                "reference": "62d2608bb4530efcf8f68b2de8bb6af0820f1fa0",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "ROH\\Util": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ganesha",
+                    "email": "reekoheek@gmail.com",
+                    "homepage": "http://xinix.co.id",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP util library",
+            "time": "2014-01-02 04:08:44"
+        },
+        {
+            "name": "slim/slim",
+            "version": "2.3.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/codeguy/Slim.git",
+                "reference": "3dec4f9ee2e9c204a9f334afd72abc174c1b792e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codeguy/Slim/zipball/3dec4f9ee2e9c204a9f334afd72abc174c1b792e",
+                "reference": "3dec4f9ee2e9c204a9f334afd72abc174c1b792e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mcrypt": "*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Slim": "."
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Josh Lockhart",
+                    "email": "info@joshlockhart.com",
+                    "homepage": "http://www.joshlockhart.com/"
+                }
+            ],
+            "description": "Slim Framework, a PHP micro framework",
+            "homepage": "http://github.com/codeguy/Slim",
+            "keywords": [
+                "microframework",
+                "rest",
+                "router"
+            ],
+            "time": "2013-10-31 02:05:09"
+        },
+        {
+            "name": "symfony/event-dispatcher",
+            "version": "v2.5.0",
+            "target-dir": "Symfony/Component/EventDispatcher",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/EventDispatcher.git",
+                "reference": "cb62ec8dd05893fc8e4f0e6e21e326e1fc731fe8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/cb62ec8dd05893fc8e4f0e6e21e326e1fc731fe8",
+                "reference": "cb62ec8dd05893fc8e4f0e6e21e326e1fc731fe8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "psr/log": "~1.0",
+                "symfony/config": "~2.0",
+                "symfony/dependency-injection": "~2.0",
+                "symfony/stopwatch": "~2.2"
+            },
+            "suggest": {
+                "symfony/dependency-injection": "",
+                "symfony/http-kernel": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\EventDispatcher\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony EventDispatcher Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-04-29 10:13:57"
+        },
+        {
+            "name": "xinix-technology/bono",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xinix-technology/bono.git",
+                "reference": "0fb9f7017cc05dfefcdca8e4dbce9fef2c6a89a3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xinix-technology/bono/zipball/0fb9f7017cc05dfefcdca8e4dbce9fef2c6a89a3",
+                "reference": "0fb9f7017cc05dfefcdca8e4dbce9fef2c6a89a3",
+                "shasum": ""
+            },
+            "require": {
+                "filp/whoops": "1.*",
+                "reekoheek/util": ">=0.1.2",
+                "slim/slim": "2.3.*",
+                "xinix-technology/norm": "*"
+            },
+            "require-dev": {
+                "phpdocumentor/phpdocumentor": "2.*",
+                "phpunit/phpunit": "3.7.22"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Bono": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ganesha",
+                    "email": "reekoheek@gmail.com",
+                    "homepage": "http://xinix.co.id",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Aprianto Pramana Putra",
+                    "email": "apriantopramanaputra@gmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Krisan Alfa",
+                    "email": "krisan47@gmail.com",
+                    "homepage": "https://twitter.com/krisanalfa",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Nur Alam",
+                    "email": "rhoe.coder@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "time": "2014-06-12 06:56:25"
+        },
+        {
+            "name": "xinix-technology/migrate",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xinix-technology/migrate.git",
+                "reference": "91c8a443eeec1107b359af916d5c9b324688c3d7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xinix-technology/migrate/zipball/91c8a443eeec1107b359af916d5c9b324688c3d7",
+                "reference": "91c8a443eeec1107b359af916d5c9b324688c3d7",
+                "shasum": ""
+            },
+            "require": {
+                "reekoheek/util": ">=0.1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Xinix\\Migrate": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ganesha",
+                    "email": "reekoheek@gmail.com",
+                    "homepage": "http://xinix.co.id",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Migration tool for bono",
+            "time": "2014-05-20 20:12:45"
+        },
+        {
+            "name": "xinix-technology/norm",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xinix-technology/norm.git",
+                "reference": "97600cae61a610e4fbd0549f81905078d05786cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xinix-technology/norm/zipball/97600cae61a610e4fbd0549f81905078d05786cf",
+                "reference": "97600cae61a610e4fbd0549f81905078d05786cf",
+                "shasum": ""
+            },
+            "require": {
+                "reekoheek/jsonkit": "~0.0.1",
+                "reekoheek/util": ">=0.1.2"
+            },
+            "require-dev": {
+                "phpdocumentor/phpdocumentor": "2.*",
+                "phpunit/phpunit": "3.7.22"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Norm": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ganesha",
+                    "email": "reekoheek@gmail.com",
+                    "homepage": "http://xinix.co.id",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Aprianto Pramana Putra",
+                    "email": "apriantopramanaputra@gmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Krisan Alfa",
+                    "email": "krisan47@gmail.com",
+                    "homepage": "https://twitter.com/krisanalfa",
+                    "role": "Developer"
+                }
+            ],
+            "time": "2014-06-12 04:44:17"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "xinix-technology/bono": 20,
+        "xinix-technology/norm": 20,
+        "xinix-technology/migrate": 20,
+        "reekoheek/bono-auth": 20
+    },
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}
