@@ -18,7 +18,7 @@ use Norm\Schema\Boolean;
 
 return array(
     'application' => array(
-        'title' => 'Bono Application',
+        'title' => 'Xeekee',
         'subtitle' => 'One great application'
     ),
     'bono.salt' => 'please change this',
@@ -53,11 +53,13 @@ return array(
         '\\Xinix\\Migrate\\Provider\\MigrateProvider' => array(
             // 'token' => 'changetokenherebeforeenable',
         ),
-        '\\App\\Provider\\AppProvider',
+        '\\Xeekee\\Provider\\XeekeeProvider',
     ),
     'bono.middlewares' => array(
-        '\\App\\Middleware\\XeekeeMiddleware' => null,
-        // '\\Bono\\Middleware\\StaticPageMiddleware' => null,
+        '\\Xeekee\\Middleware\\XeekeeMiddleware' => array(
+            'root' => 'home/anu'
+        ),
+        '\\Bono\\Middleware\\StaticPageMiddleware' => null,
         '\\Bono\\Middleware\\ControllerMiddleware' => array(
             'default' => '\\Norm\\Controller\\NormController',
             'mapping' => array(

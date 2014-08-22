@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Provider;
+namespace Xeekee\Provider;
 
-class AppProvider extends \Bono\Provider\Provider
+class XeekeeProvider extends \Bono\Provider\Provider
 {
     public function initialize()
     {
