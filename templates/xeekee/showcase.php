@@ -50,10 +50,10 @@
     }
 </style>
 
-<div>
+<div class="command-bar">
 <?php if (!empty($_SESSION['user'])): ?>
-    <a href="<?php echo \URL::site('/admin/user') ?>">User</a> |
-    <a href="<?php echo \URL::site('/admin/workspace') ?>">Workspace</a> |
+    <a href="<?php echo \URL::site('/admin/user') ?>">User</a>
+    <a href="<?php echo \URL::site('/admin/workspace') ?>">Workspace</a>
     <a href="<?php echo \URL::site('/logout') ?>">Logout</a>
 <?php else: ?>
     <a href="<?php echo \URL::site('/login') ?>">Login</a>

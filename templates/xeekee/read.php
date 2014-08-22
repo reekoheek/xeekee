@@ -1,9 +1,17 @@
-<div>
-    <?php echo @$entry['body'] ?>
-</div>
+<style>
+    pre {
+        padding: 10px;
+        margin: 0;
+        background-color: #ddd;
+    }
+</style>
 
 <div>
-    <a href="<?php echo \URL::current().'?edit' ?>">Edit</a> |
+<pre><?php echo @$entry['body'] ?></pre>
+</div>
+
+<div class="command-bar">
+    <a href="<?php echo \URL::current().'?edit' ?>">Edit</a>
     <?php if ($entry->isWorkspace()): ?>
         <a href="<?php echo \URL::site('/admin/workspace/'.$entry->getWorkspace()->getId().'/update') ?>">Update Workspace</a>
     <?php else: ?>

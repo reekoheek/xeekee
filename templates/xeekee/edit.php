@@ -14,11 +14,8 @@
         <textarea name="body" rows="20"><?php echo @$entry['body'] ?></textarea>
     </div>
 
-    <div>
+    <div class="command-bar">
         <input type="submit">
+        <a href="<?php echo \URL::current() ?>">Show</a>
     </div>
 </form>
-
-<div>
-    <a href="<?php echo \URL::current() ?>">Show</a>
-</div>
