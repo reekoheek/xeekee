@@ -11,6 +11,7 @@ class Xeekee implements \ArrayAccess
     protected $dir;
 
     protected $attributes = array();
+    protected $workspace = '';
 
     public function __construct($middleware, $pathInfo)
     {
@@ -102,5 +103,19 @@ class Xeekee implements \ArrayAccess
         file_put_contents($history, $content);
         file_put_contents($this->file, $content);
 
+    }
+
+    public function getWorkspace()
+    {
+        if ($this->workspace === '') {
+            $this->workspace = \Norm::factory('Workspace')->findOne(array('path' => $this->pathInfo));
+        }
+
+        return $this->workspace;
+    }
+
+    public function isWorkspace()
+    {
+        return ($this->getWorkspace() !== null);
     }
 }

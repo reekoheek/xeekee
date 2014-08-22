@@ -12,7 +12,6 @@ class XeekeeMiddleware extends \Slim\Middleware
 
     public function call()
     {
-
         $options = array_merge(array(
             'baseDir' => 'data',
         ), $this->options ?: array());
@@ -20,6 +19,41 @@ class XeekeeMiddleware extends \Slim\Middleware
         $this->app = $app = \App::getInstance();
         $this->request = $app->request;
         $this->response = $app->response;
+
+        $app->get('/admin/workspace/:id/members', function ($id) use ($app) {
+            $entry = \Norm::factory('Workspace')->findOne($id);
+            $app->response->set('entry', $entry);
+            $app->response->template('admin/workspace/members');
+        });
+
+        $app->post('/admin/workspace/:id/members', function ($id) use ($app) {
+            try {
+                $entry = \Norm::factory('Workspace')->findOne($id);
+
+                $post = $app->request->post();
+                if (empty($post['members'])) {
+                    $members = array();
+                } else {
+                    foreach ($post['members'] as $member) {
+                        if (!empty($member)) {
+                            $members[] = $member;
+                        }
+                    }
+                }
+
+                $entry['members'] = $members;
+
+                $entry->save();
+
+                h('notification.info', 'Member updated.');
+
+            } catch(\Exception $e) {
+                h('notification.error', $e);
+            }
+
+            $app->response->set('entry', $entry);
+            $app->response->template('admin/workspace/members');
+        });
 
         $pathInfo = $app->request->getPathInfo();
 

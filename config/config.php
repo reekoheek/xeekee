@@ -14,7 +14,8 @@
 
 use Norm\Schema\String;
 use Norm\Schema\Password;
-use Norm\Schema\Boolean;
+use Norm\Schema\Text;
+use Norm\Schema\NormArray;
 
 return array(
     'application' => array(
@@ -43,8 +44,10 @@ return array(
                     ),
                     'Workspace' => array(
                         'schema' => array(
-                            'name' => String::create('name')->filter('trim|required'),
-                            'is_default' => Boolean::create('is_default'),
+                            'path' => String::create('path')->filter('trim|required'),
+                            'title' => String::create('title')->filter('trim|required'),
+                            'description' => Text::create('description')->filter('trim'),
+                            '$members' => NormArray::create('$members'),
                         ),
                     ),
                 ),
@@ -60,6 +63,7 @@ return array(
             'root' => 'home/anu'
         ),
         '\\Bono\\Middleware\\StaticPageMiddleware' => null,
+        '\\Xeekee\\Middleware\\ShowcaseMiddleware' => array(),
         '\\Bono\\Middleware\\ControllerMiddleware' => array(
             'default' => '\\Norm\\Controller\\NormController',
             'mapping' => array(
