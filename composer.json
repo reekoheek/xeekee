@@ -12,7 +12,8 @@
         "xinix-technology/bono": "dev-master",
         "xinix-technology/norm": "dev-master",
         "xinix-technology/migrate": "dev-master",
-        "reekoheek/bono-auth": "dev-master"
+        "reekoheek/bono-auth": "dev-master",
+        "michelf/php-markdown": "1.4.1"
     },
     "autoload": {
         "psr-0": {

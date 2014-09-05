@@ -1,3 +1,6 @@
+<?php
+use \Michelf\Markdown;
+?>
 <style>
     pre {
         padding: 10px;
@@ -7,7 +10,7 @@
 </style>
 
 <div>
-<pre><?php echo @$entry['body'] ?></pre>
+<?php echo Markdown::defaultTransform(@$entry['body']) ?>
 </div>
 
 <div class="command-bar">

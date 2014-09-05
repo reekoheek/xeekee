@@ -47,7 +47,7 @@ class XeekeeMiddleware extends \Slim\Middleware
 
                 h('notification.info', 'Member updated.');
 
-            } catch(\Exception $e) {
+            } catch (\Exception $e) {
                 h('notification.error', $e);
             }
 
@@ -57,8 +57,7 @@ class XeekeeMiddleware extends \Slim\Middleware
 
         $pathInfo = $app->request->getPathInfo();
 
-        if (
-            !is_null($app->controller) ||
+        if (!is_null($app->controller) ||
             $pathInfo === '/logout' ||
             $pathInfo === '/login' ||
             $pathInfo === '/unauthorized') {
@@ -66,7 +65,7 @@ class XeekeeMiddleware extends \Slim\Middleware
             return;
         }
 
-        $app->container->singleton('xeekeeTopPage', function($c) use ($app) {
+        $app->container->singleton('xeekeeTopPage', function ($c) use ($app) {
             return !(count($app->request->getSegments()) > 2);
         });
 
@@ -106,7 +105,8 @@ class XeekeeMiddleware extends \Slim\Middleware
         $this->app->redirect(\URL::current());
     }
 
-    public function get($pathInfo) {
+    public function get($pathInfo)
+    {
         return new Xeekee($this, $pathInfo);
     }
 
