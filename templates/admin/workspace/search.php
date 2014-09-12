@@ -1,12 +1,12 @@
-<h2>List <?php echo f('controller.name') ?></h2>
+<h2><?php echo ROH\Util\Inflector::pluralize(f('controller.name')) ?></h2>
 
-<div class="command-bar">
-    <a href="<?php echo f('controller.url', '/null/create') ?>">Create</a>
-</div>
+<p>
+    <a href="<?php echo f('controller.url', '/null/create') ?>" class="btn btn-primary">Create</a>
+</p>
 
 <div class="table-placeholder">
 
-    <table>
+    <table class="table table-striped table-bordered">
         <thead>
             <tr>
                 <?php if (f('app')->controller->schema()): ?>

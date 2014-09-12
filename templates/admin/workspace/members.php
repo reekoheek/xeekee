@@ -1,21 +1,21 @@
-<h2><?php echo f('controller.name') ?> Members</h2>
+<h2><?php echo f('controller.name') ?> Members (<?php echo $entry->format() ?>)</h2>
 
-<form method="post">
-    <div>
-        <input type="text" name="members[]" placeholder="Username of member">
+<form method="post" role="form">
+    <div class="form-group">
+        <input type="text" name="members[]" placeholder="Username of member" class="form-input">
     </div>
     <?php if (!empty($entry['members'])): ?>
 
         <?php foreach ($entry['members'] as $member): ?>
-            <div>
-                <input type="text" name="members[]" value="<?php echo $member ?>">
+            <div class="form-group">
+                <input type="text" name="members[]" value="<?php echo $member ?>" placeholder="Username of member" class="form-input">
             </div>
         <?php endforeach ?>
 
     <?php endif ?>
 
-    <div class="command-bar">
-        <input type="submit">
-        <a href="<?php echo \URL::site('/admin/workspace') ?>">List</a>
-    </div>
+    <p>
+        <input type="submit" class="btn btn-primary">
+        <a href="<?php echo \URL::site('/admin/workspace') ?>" class="btn btn-default">List</a>
+    </p>
 </form>

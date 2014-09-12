@@ -18,17 +18,13 @@ use Norm\Schema\Text;
 use Norm\Schema\NormArray;
 
 return array(
-    'application' => array(
-        'title' => 'Xeekee',
-        'subtitle' => 'One great application'
-    ),
     'bono.salt' => 'please change this',
     'bono.providers' => array(
         '\\Norm\\Provider\\NormProvider' => array(
             'datasources' => array(
                 'mongo' => array(
                     'driver' => '\\Norm\\Connection\\MongoConnection',
-                    'database' => 'bono',
+                    'database' => 'xeekee',
                 ),
             ),
             'collections' => array(
@@ -85,5 +81,20 @@ return array(
         ),
         '\\Bono\\Middleware\\NotificationMiddleware' => null,
         '\\Bono\\Middleware\\SessionMiddleware' => null,
+    ),
+
+    'bono.theme' => array(
+        'class' => '\\ROH\\Theme\\BootstrapTheme',
+        'overwrite' => true,
+        'options' => array(
+            'title' => 'XeeKee',
+            'menu' => array(
+                // array( 'label' => 'Home', 'url' => '/home' ),
+                // array( 'label' => 'Container', 'url' => '/container' ),
+                // array( 'label' => 'Network', 'url' => '/network' ),
+                // array( 'label' => 'Template', 'url' => '/template' ),
+                // array( 'label' => 'User', 'url' => '/user' ),
+            ),
+        ),
     ),
 );

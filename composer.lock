@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "22c3e601a5b824317e078eafd1524bd0",
+    "hash": "ba0f74e6b1f7a2699da312581cfe8f57",
     "packages": [
         {
             "name": "filp/whoops",
@@ -213,12 +213,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reekoheek/bono-auth.git",
-                "reference": "bb8dacd365bf05d0437c4b1b449ccb02e9ac9faf"
+                "reference": "d66ed221e0a823639a27b6e2cd239d49e632a7d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reekoheek/bono-auth/zipball/bb8dacd365bf05d0437c4b1b449ccb02e9ac9faf",
-                "reference": "bb8dacd365bf05d0437c4b1b449ccb02e9ac9faf",
+                "url": "https://api.github.com/repos/reekoheek/bono-auth/zipball/d66ed221e0a823639a27b6e2cd239d49e632a7d8",
+                "reference": "d66ed221e0a823639a27b6e2cd239d49e632a7d8",
                 "shasum": ""
             },
             "require": {
@@ -242,7 +242,40 @@
                 }
             ],
             "description": "Bono Auth",
-            "time": "2014-08-08 12:59:22"
+            "time": "2014-09-09 02:00:04"
+        },
+        {
+            "name": "reekoheek/bootstrap-theme",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reekoheek/bootstrap-theme.git",
+                "reference": "5f316c6d2213ba0b8a0ad3fd4ca9367d3db39837"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reekoheek/bootstrap-theme/zipball/5f316c6d2213ba0b8a0ad3fd4ca9367d3db39837",
+                "reference": "5f316c6d2213ba0b8a0ad3fd4ca9367d3db39837",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "ROH\\Theme\\BootstrapTheme": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ganesha",
+                    "email": "reekoheek@gmail.com"
+                }
+            ],
+            "description": "Bono Bootstrap Theme",
+            "time": "2014-09-12 12:22:45"
         },
         {
             "name": "reekoheek/jsonkit",
@@ -428,12 +461,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/xinix-technology/bono.git",
-                "reference": "1df6460d3cb6c5a4508976c1d202b56afe196fbf"
+                "reference": "c0781de3de6a19cf4a9c9253042a34909a5bf8f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xinix-technology/bono/zipball/1df6460d3cb6c5a4508976c1d202b56afe196fbf",
-                "reference": "1df6460d3cb6c5a4508976c1d202b56afe196fbf",
+                "url": "https://api.github.com/repos/xinix-technology/bono/zipball/c0781de3de6a19cf4a9c9253042a34909a5bf8f6",
+                "reference": "c0781de3de6a19cf4a9c9253042a34909a5bf8f6",
                 "shasum": ""
             },
             "require": {
@@ -480,7 +513,7 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2014-08-08 12:48:10"
+            "time": "2014-09-08 07:17:15"
         },
         {
             "name": "xinix-technology/migrate",
@@ -526,12 +559,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/xinix-technology/norm.git",
-                "reference": "8625a1853e3bc6b075e7056b2dd2e6ddb7f193c1"
+                "reference": "d8bc2f23c4403b7249a84d0fc21259c862160a6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xinix-technology/norm/zipball/8625a1853e3bc6b075e7056b2dd2e6ddb7f193c1",
-                "reference": "8625a1853e3bc6b075e7056b2dd2e6ddb7f193c1",
+                "url": "https://api.github.com/repos/xinix-technology/norm/zipball/d8bc2f23c4403b7249a84d0fc21259c862160a6a",
+                "reference": "d8bc2f23c4403b7249a84d0fc21259c862160a6a",
                 "shasum": ""
             },
             "require": {
@@ -571,7 +604,7 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2014-08-19 10:49:33"
+            "time": "2014-09-09 02:01:27"
         }
     ],
     "packages-dev": [],
@@ -581,7 +614,8 @@
         "xinix-technology/bono": 20,
         "xinix-technology/norm": 20,
         "xinix-technology/migrate": 20,
-        "reekoheek/bono-auth": 20
+        "reekoheek/bono-auth": 20,
+        "reekoheek/bootstrap-theme": 20
     },
     "prefer-stable": false,
     "platform": [],

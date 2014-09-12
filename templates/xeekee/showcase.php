@@ -7,15 +7,16 @@
 
     .workspaces {
         margin-top: 20px;
-        border: 1px solid grey;
-        border-radius: 2px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
         /*padding: 0 10px;*/
     }
     .workspaces .workspace {
         /*border: 1px solid blue;*/
-        background-color: #ddd;
+        background-color: #efefef;
         margin: 10px;
         color: #444;
+        border-radius: 4px;
     }
 
     .workspaces .workspace a {
@@ -50,19 +51,19 @@
     }
 </style>
 
-<div class="command-bar">
+<p>
 <?php if (!empty($_SESSION['user'])): ?>
-    <a href="<?php echo \URL::site('/admin/user') ?>">User</a>
-    <a href="<?php echo \URL::site('/admin/workspace') ?>">Workspace</a>
-    <a href="<?php echo \URL::site('/logout') ?>">Logout</a>
-<?php else: ?>
-    <a href="<?php echo \URL::site('/login') ?>">Login</a>
+    <a href="<?php echo \URL::site('/admin/user') ?>" class="btn btn-default">User</a>
+    <a href="<?php echo \URL::site('/admin/workspace') ?>" class="btn btn-default">Workspace</a>
+    <!-- <a href="<?php echo \URL::site('/logout') ?>" class="btn btn-default">Logout</a> -->
+<?php // else: ?>
+    <!-- <a href="<?php echo \URL::site('/login') ?>" class="btn btn-default">Login</a> -->
 <?php endif ?>
-</div>
+</p>
 
 <div class="search">
     <form action="">
-        <input type="text" name="q" placeholder="Search workspace" value="<?php echo @$q ?>">
+        <input type="text" name="q" placeholder="Search workspace" value="<?php echo @$q ?>" class="form-control">
     </form>
 </div>
 

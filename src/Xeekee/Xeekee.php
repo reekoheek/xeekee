@@ -71,6 +71,11 @@ class Xeekee implements \ArrayAccess
         return !empty($this->attributes);
     }
 
+    public function format()
+    {
+        return '';
+    }
+
     public function save($data)
     {
 

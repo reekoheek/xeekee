@@ -13,11 +13,13 @@ use \Michelf\Markdown;
 <?php echo Markdown::defaultTransform(@$entry['body']) ?>
 </div>
 
-<div class="command-bar">
-    <a href="<?php echo \URL::current().'?edit' ?>">Edit</a>
+<hr>
+
+<p>
+    <a href="<?php echo \URL::current().'?edit' ?>" class="btn btn-default">Edit</a>
     <?php if ($entry->isWorkspace()): ?>
-        <a href="<?php echo \URL::site('/admin/workspace/'.$entry->getWorkspace()->getId().'/update') ?>">Update Workspace</a>
+        <a href="<?php echo \URL::site('/admin/workspace/'.$entry->getWorkspace()->getId().'/update') ?>" class="btn btn-default">Update Workspace</a>
     <?php else: ?>
-        <a href="<?php echo \URL::site('/admin/workspace/null/create').'?path='.$app->request->getPathInfo() ?>">Create Workspace</a>
+        <a href="<?php echo \URL::site('/admin/workspace/null/create').'?path='.$app->request->getPathInfo() ?>" class="btn btn-default">Create Workspace</a>
     <?php endif ?>
-</div>
+</p>

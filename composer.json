@@ -13,11 +13,15 @@
         "xinix-technology/norm": "dev-master",
         "xinix-technology/migrate": "dev-master",
         "reekoheek/bono-auth": "dev-master",
+        "reekoheek/bootstrap-theme": "dev-master",
         "michelf/php-markdown": "1.4.1"
     },
     "autoload": {
         "psr-0": {
-            "Xeekee": "src/"
+            "Xeekee": "src/",
+            "ROH\\Theme\\BootstrapTheme": "/home/jafar/workspaces/php/themes/bootstrap-theme/src/",
+            "Bono": "/home/jafar/workspaces/php/lib/bono/src/",
+            "Norm": "/home/jafar/workspaces/php/lib/norm/src/"
         }
     }
 }
