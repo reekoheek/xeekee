@@ -213,12 +213,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reekoheek/bono-auth.git",
-                "reference": "d66ed221e0a823639a27b6e2cd239d49e632a7d8"
+                "reference": "cce80a402130f32e6a51bfe3f1413e36e1fdceef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reekoheek/bono-auth/zipball/d66ed221e0a823639a27b6e2cd239d49e632a7d8",
-                "reference": "d66ed221e0a823639a27b6e2cd239d49e632a7d8",
+                "url": "https://api.github.com/repos/reekoheek/bono-auth/zipball/cce80a402130f32e6a51bfe3f1413e36e1fdceef",
+                "reference": "cce80a402130f32e6a51bfe3f1413e36e1fdceef",
                 "shasum": ""
             },
             "require": {
@@ -242,7 +242,7 @@
                 }
             ],
             "description": "Bono Auth",
-            "time": "2014-09-09 02:00:04"
+            "time": "2014-09-12 13:44:00"
         },
         {
             "name": "reekoheek/bootstrap-theme",
@@ -250,12 +250,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reekoheek/bootstrap-theme.git",
-                "reference": "5f316c6d2213ba0b8a0ad3fd4ca9367d3db39837"
+                "reference": "060e9bfdebe0ba55771d4b7d82224cea8c28a0b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reekoheek/bootstrap-theme/zipball/5f316c6d2213ba0b8a0ad3fd4ca9367d3db39837",
-                "reference": "5f316c6d2213ba0b8a0ad3fd4ca9367d3db39837",
+                "url": "https://api.github.com/repos/reekoheek/bootstrap-theme/zipball/060e9bfdebe0ba55771d4b7d82224cea8c28a0b9",
+                "reference": "060e9bfdebe0ba55771d4b7d82224cea8c28a0b9",
                 "shasum": ""
             },
             "type": "library",
@@ -275,7 +275,7 @@
                 }
             ],
             "description": "Bono Bootstrap Theme",
-            "time": "2014-09-12 12:22:45"
+            "time": "2014-09-12 13:44:31"
         },
         {
             "name": "reekoheek/jsonkit",
