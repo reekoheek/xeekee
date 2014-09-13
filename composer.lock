@@ -213,12 +213,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reekoheek/bono-auth.git",
-                "reference": "cce80a402130f32e6a51bfe3f1413e36e1fdceef"
+                "reference": "b5ab1c7a11d34459d082264059fbb35e506946a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reekoheek/bono-auth/zipball/cce80a402130f32e6a51bfe3f1413e36e1fdceef",
-                "reference": "cce80a402130f32e6a51bfe3f1413e36e1fdceef",
+                "url": "https://api.github.com/repos/reekoheek/bono-auth/zipball/b5ab1c7a11d34459d082264059fbb35e506946a7",
+                "reference": "b5ab1c7a11d34459d082264059fbb35e506946a7",
                 "shasum": ""
             },
             "require": {
@@ -242,7 +242,7 @@
                 }
             ],
             "description": "Bono Auth",
-            "time": "2014-09-12 13:44:00"
+            "time": "2014-09-13 05:06:49"
         },
         {
             "name": "reekoheek/bootstrap-theme",
