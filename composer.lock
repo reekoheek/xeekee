@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ba0f74e6b1f7a2699da312581cfe8f57",
+    "hash": "b1e13559d1dc5277d2c8c8e3ea645851",
     "packages": [
         {
             "name": "filp/whoops",
@@ -312,7 +312,7 @@
                     "role": "Developer"
                 },
                 {
-                    "name": "Aprianto Pramana Putra",
+                    "name": "Apriyanto Pramana Putra",
                     "email": "apriantopramanaputra@gmail.com",
                     "role": "Developer"
                 }
@@ -559,12 +559,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/xinix-technology/norm.git",
-                "reference": "d8bc2f23c4403b7249a84d0fc21259c862160a6a"
+                "reference": "ba4cda4372932384aa92ba555ffa50fe0a1d459e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xinix-technology/norm/zipball/d8bc2f23c4403b7249a84d0fc21259c862160a6a",
-                "reference": "d8bc2f23c4403b7249a84d0fc21259c862160a6a",
+                "url": "https://api.github.com/repos/xinix-technology/norm/zipball/ba4cda4372932384aa92ba555ffa50fe0a1d459e",
+                "reference": "ba4cda4372932384aa92ba555ffa50fe0a1d459e",
                 "shasum": ""
             },
             "require": {
@@ -604,7 +604,7 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2014-09-09 02:01:27"
+            "time": "2014-09-12 13:09:48"
         }
     ],
     "packages-dev": [],

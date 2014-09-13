@@ -18,10 +18,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Xeekee": "src/",
-            "ROH\\Theme\\BootstrapTheme": "/home/jafar/workspaces/php/themes/bootstrap-theme/src/",
-            "Bono": "/home/jafar/workspaces/php/lib/bono/src/",
-            "Norm": "/home/jafar/workspaces/php/lib/norm/src/"
+            "Xeekee": "src/"
         }
     }
 }

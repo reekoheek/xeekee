@@ -77,7 +77,16 @@ return array(
         ),
         // uncomment below to enable auth
         '\\ROH\\BonoAuth\\Middleware\\AuthMiddleware' => array(
-            'driver' => '\\ROH\\BonoAuth\\Driver\\NormAuth',
+            'driver' => '\\ROH\\BonoAuth\\Driver\\OAuth',
+            'debug' => true,
+            'baseUrl' => 'http://192.168.1.99/internal/account/www/index.php',
+            'authUrl' => '/oauth/auth',
+            'tokenUrl' => '/oauth/token',
+            'revokeUrl' => '/oauth/revoke',
+            'clientId' => '5413c7cdb75868b3278b4567.client.account.xinix.co.id',
+            'clientSecret' => 'b96a2b17d92cd6debff65c21d94858a5',
+            'redirectUri' => 'http://192.168.1.99/internal/xeekee/www/index.php/login',
+            'scope' => 'user',
         ),
         '\\Bono\\Middleware\\NotificationMiddleware' => null,
         '\\Bono\\Middleware\\SessionMiddleware' => null,
