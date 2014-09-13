@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b1e13559d1dc5277d2c8c8e3ea645851",
+    "hash": "fdcaf82087e466f020f18a5b6ca860e6",
     "packages": [
         {
             "name": "filp/whoops",
@@ -209,7 +209,7 @@
         },
         {
             "name": "reekoheek/bono-auth",
-            "version": "dev-master",
+            "version": "0.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reekoheek/bono-auth.git",
@@ -614,7 +614,6 @@
         "xinix-technology/bono": 20,
         "xinix-technology/norm": 20,
         "xinix-technology/migrate": 20,
-        "reekoheek/bono-auth": 20,
         "reekoheek/bootstrap-theme": 20
     },
     "prefer-stable": false,
