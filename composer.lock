@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fdcaf82087e466f020f18a5b6ca860e6",
+    "hash": "e3ae38eb22bf3bfce74fe5e445f32b74",
     "packages": [
         {
             "name": "filp/whoops",
@@ -157,68 +157,72 @@
             "time": "2014-01-28 22:29:15"
         },
         {
-            "name": "michelf/php-markdown",
-            "version": "1.4.1",
+            "name": "kzykhys/ciconia",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/michelf/php-markdown.git",
-                "reference": "de9a19c7bf352d41cc99ed86c3c0ef17e87394b6"
+                "url": "https://github.com/kzykhys/Ciconia.git",
+                "reference": "52d43ec35a656ef1bda07fdd8398081801f960ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/de9a19c7bf352d41cc99ed86c3c0ef17e87394b6",
-                "reference": "de9a19c7bf352d41cc99ed86c3c0ef17e87394b6",
+                "url": "https://api.github.com/repos/kzykhys/Ciconia/zipball/52d43ec35a656ef1bda07fdd8398081801f960ae",
+                "reference": "52d43ec35a656ef1bda07fdd8398081801f960ae",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": ">5.4.0",
+                "symfony/console": ">=2.3,<2.5-dev",
+                "symfony/options-resolver": ">=2.3,<2.5-dev"
             },
+            "require-dev": {
+                "symfony/finder": ">=2.3,<2.5-dev",
+                "symfony/stopwatch": ">=2.3,<2.5-dev"
+            },
+            "bin": [
+                "bin/ciconia"
+            ],
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-lib": "1.4.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
                 "psr-0": {
-                    "Michelf": ""
+                    "": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD-3-Clause"
+                "MIT"
             ],
             "authors": [
                 {
-                    "name": "Michel Fortin",
-                    "email": "michel.fortin@michelf.ca",
-                    "homepage": "http://michelf.ca/",
-                    "role": "Developer"
-                },
-                {
-                    "name": "John Gruber",
-                    "homepage": "http://daringfireball.net/"
+                    "name": "Kazuyuki Hayashi",
+                    "email": "hayashi@valnur.net"
                 }
             ],
-            "description": "PHP Markdown",
-            "homepage": "http://michelf.ca/projects/php-markdown/",
+            "description": "The Markdown parser for PHP5.4",
             "keywords": [
-                "markdown"
+                "cli",
+                "markdown",
+                "parser"
             ],
-            "time": "2014-05-05 02:43:50"
+            "time": "2014-01-23 08:14:37"
         },
         {
             "name": "reekoheek/bono-auth",
-            "version": "0.1.5",
+            "version": "0.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reekoheek/bono-auth.git",
-                "reference": "b5ab1c7a11d34459d082264059fbb35e506946a7"
+                "reference": "0c71907291574c4830a8d2271df731935f033fb6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reekoheek/bono-auth/zipball/b5ab1c7a11d34459d082264059fbb35e506946a7",
-                "reference": "b5ab1c7a11d34459d082264059fbb35e506946a7",
+                "url": "https://api.github.com/repos/reekoheek/bono-auth/zipball/0c71907291574c4830a8d2271df731935f033fb6",
+                "reference": "0c71907291574c4830a8d2271df731935f033fb6",
                 "shasum": ""
             },
             "require": {
@@ -242,7 +246,7 @@
                 }
             ],
             "description": "Bono Auth",
-            "time": "2014-09-13 05:06:49"
+            "time": "2014-09-13 09:34:28"
         },
         {
             "name": "reekoheek/bootstrap-theme",
@@ -399,6 +403,59 @@
             "time": "2013-10-31 02:05:09"
         },
         {
+            "name": "symfony/console",
+            "version": "v2.4.9",
+            "target-dir": "Symfony/Component/Console",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Console.git",
+                "reference": "6cdbe19f8f9025a84ccc45c3870e388e424bea5c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/6cdbe19f8f9025a84ccc45c3870e388e424bea5c",
+                "reference": "6cdbe19f8f9025a84ccc45c3870e388e424bea5c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "symfony/event-dispatcher": "~2.1"
+            },
+            "suggest": {
+                "symfony/event-dispatcher": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Console\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Symfony Console Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-08-14 14:51:32"
+        },
+        {
             "name": "symfony/event-dispatcher",
             "version": "v2.5.4",
             "target-dir": "Symfony/Component/EventDispatcher",
@@ -456,17 +513,69 @@
             "time": "2014-07-28 13:20:46"
         },
         {
+            "name": "symfony/options-resolver",
+            "version": "v2.4.9",
+            "target-dir": "Symfony/Component/OptionsResolver",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/OptionsResolver.git",
+                "reference": "6ac54d42397de6e9cbb9d41ca426cd0d5fc419db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/OptionsResolver/zipball/6ac54d42397de6e9cbb9d41ca426cd0d5fc419db",
+                "reference": "6ac54d42397de6e9cbb9d41ca426cd0d5fc419db",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\OptionsResolver\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Symfony OptionsResolver Component",
+            "homepage": "http://symfony.com",
+            "keywords": [
+                "config",
+                "configuration",
+                "options"
+            ],
+            "time": "2014-07-09 09:04:55"
+        },
+        {
             "name": "xinix-technology/bono",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/xinix-technology/bono.git",
-                "reference": "c0781de3de6a19cf4a9c9253042a34909a5bf8f6"
+                "reference": "c0049ac11099416ed2b1eb986a061240b16d28e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xinix-technology/bono/zipball/c0781de3de6a19cf4a9c9253042a34909a5bf8f6",
-                "reference": "c0781de3de6a19cf4a9c9253042a34909a5bf8f6",
+                "url": "https://api.github.com/repos/xinix-technology/bono/zipball/c0049ac11099416ed2b1eb986a061240b16d28e1",
+                "reference": "c0049ac11099416ed2b1eb986a061240b16d28e1",
                 "shasum": ""
             },
             "require": {
@@ -513,7 +622,7 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2014-09-08 07:17:15"
+            "time": "2014-09-13 09:33:08"
         },
         {
             "name": "xinix-technology/migrate",
@@ -559,12 +668,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/xinix-technology/norm.git",
-                "reference": "ba4cda4372932384aa92ba555ffa50fe0a1d459e"
+                "reference": "aa944c1d4b8c21186a0edfab2ea0e52656896537"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xinix-technology/norm/zipball/ba4cda4372932384aa92ba555ffa50fe0a1d459e",
-                "reference": "ba4cda4372932384aa92ba555ffa50fe0a1d459e",
+                "url": "https://api.github.com/repos/xinix-technology/norm/zipball/aa944c1d4b8c21186a0edfab2ea0e52656896537",
+                "reference": "aa944c1d4b8c21186a0edfab2ea0e52656896537",
                 "shasum": ""
             },
             "require": {
@@ -604,7 +713,7 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2014-09-12 13:09:48"
+            "time": "2014-09-13 12:28:41"
         }
     ],
     "packages-dev": [],
