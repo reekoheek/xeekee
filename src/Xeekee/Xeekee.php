@@ -1,6 +1,7 @@
-<?php
+<?php namespace Xeekee;
 
-namespace Xeekee;
+use Ciconia\Ciconia;
+use Ciconia\Extension\Gfm;
 
 class Xeekee implements \ArrayAccess
 {
@@ -122,5 +123,21 @@ class Xeekee implements \ArrayAccess
     public function isWorkspace()
     {
         return ($this->getWorkspace() !== null);
+    }
+
+    public function renderContent()
+    {
+        $ciconia = new Ciconia();
+
+        $ciconia->addExtension(new Gfm\FencedCodeBlockExtension());
+        $ciconia->addExtension(new Gfm\TaskListExtension());
+        $ciconia->addExtension(new Gfm\InlineStyleExtension());
+        $ciconia->addExtension(new Gfm\WhiteSpaceExtension());
+        $ciconia->addExtension(new Gfm\TableExtension());
+        $ciconia->addExtension(new Gfm\UrlAutoLinkExtension());
+
+        $content = $ciconia->render(@$this['body']);
+
+        echo $content;
     }
 }

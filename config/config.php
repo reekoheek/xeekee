@@ -78,6 +78,7 @@ return array(
         // uncomment below to enable auth
         '\\ROH\\BonoAuth\\Middleware\\AuthMiddleware' => array(
             'driver' => '\\ROH\\BonoAuth\\Driver\\OAuth',
+            // 'driver' => '\\ROH\\BonoAuth\\Driver\\NormAuth',
             'debug' => true,
             'baseUrl' => 'http://192.168.1.99/internal/account/www/index.php',
             'authUrl' => '/oauth/auth',

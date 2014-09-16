@@ -6,6 +6,10 @@
         {
             "name": "Ganesha",
             "email": "reekoheek@gmail.com"
+        },
+        {
+            "name": "Krisan Alfa Timur",
+            "email": "krisan47@gmail.com"
         }
     ],
     "require": {
@@ -14,7 +18,7 @@
         "xinix-technology/migrate": "dev-master",
         "reekoheek/bono-auth": "~0.1.5",
         "reekoheek/bootstrap-theme": "dev-master",
-        "michelf/php-markdown": "1.4.1"
+        "kzykhys/ciconia": "~1.0.0"
     },
     "autoload": {
         "psr-0": {

@@ -98,7 +98,7 @@ class XeekeeMiddleware extends \Slim\Middleware
         $post = $this->request->post();
 
         $post['author'] = $_SESSION['user']['username'];
-        $post['sesuatu'] = 'dsadasd';
+        $post['sesuatu'] = 'Powered by Xinix';
 
         $this->get($this->request->getPathInfo())->save($post);
 

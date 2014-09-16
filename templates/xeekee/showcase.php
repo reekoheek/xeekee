@@ -42,7 +42,8 @@
 
     .workspaces .workspace span.path {
         padding: 0;
-        margin: 0;
+        /*margin: 0;*/
+        margin-top: 5px;
         display: inline;
         font-size: .8em;
         float: right;
