@@ -20,10 +20,10 @@ use Norm\Schema\NormArray;
 return array(
     'bono.salt' => 'please change this',
     'bono.providers' => array(
-        '\\Norm\\Provider\\NormProvider' => array(
+        'Norm\\Provider\\NormProvider' => array(
             'datasources' => array(
                 'mongo' => array(
-                    'driver' => '\\Norm\\Connection\\MongoConnection',
+                    'driver' => 'Norm\\Connection\\MongoConnection',
                     'database' => 'xeekee',
                 ),
             ),
@@ -49,35 +49,28 @@ return array(
                 ),
             ),
         ),
-        '\\Xinix\\Migrate\\Provider\\MigrateProvider' => array(
+        'Xinix\\Migrate\\Provider\\MigrateProvider' => array(
             // 'token' => 'changetokenherebeforeenable',
         ),
-        '\\Xeekee\\Provider\\XeekeeProvider',
+        'Xeekee\\Provider\\XeekeeProvider',
     ),
     'bono.middlewares' => array(
-        '\\Xeekee\\Middleware\\XeekeeMiddleware' => array(
+        'Xeekee\\Middleware\\XeekeeMiddleware' => array(
             'root' => 'home/anu'
         ),
-        '\\Bono\\Middleware\\StaticPageMiddleware' => null,
-        '\\Xeekee\\Middleware\\ShowcaseMiddleware' => array(),
-        '\\Bono\\Middleware\\ControllerMiddleware' => array(
-            'default' => '\\Norm\\Controller\\NormController',
+        'Bono\\Middleware\\StaticPageMiddleware' => null,
+        'Xeekee\\Middleware\\ShowcaseMiddleware' => array(),
+        'Bono\\Middleware\\ControllerMiddleware' => array(
+            'default' => 'Norm\\Controller\\NormController',
             'mapping' => array(
                 '/admin/user' => null,
                 '/admin/workspace' => null,
             ),
         ),
-        '\\Bono\\Middleware\\ContentNegotiatorMiddleware' => array(
-            'extensions' => array(
-                'json' => 'application/json',
-            ),
-            'views' => array(
-                'application/json' => '\\Bono\\View\\JsonView',
-            ),
-        ),
         // uncomment below to enable auth
-        '\\ROH\\BonoAuth\\Middleware\\AuthMiddleware' => array(
-            'driver' => '\\ROH\\BonoAuth\\Driver\\OAuth',
+        'ROH\\BonoAuth\\Middleware\\AuthMiddleware' => array(
+            // 'driver' => 'ROH\\BonoAuth\\Driver\\NormAuth',
+            'driver' => 'ROH\\BonoAuth\\Driver\\OAuth',
             'debug' => true,
             'baseUrl' => 'http://192.168.1.99/internal/account/www/index.php',
             'authUrl' => '/oauth/auth',
@@ -88,12 +81,20 @@ return array(
             'redirectUri' => 'http://192.168.1.99/internal/xeekee/www/index.php/login',
             'scope' => 'user',
         ),
-        '\\Bono\\Middleware\\NotificationMiddleware' => null,
-        '\\Bono\\Middleware\\SessionMiddleware' => null,
+        'Bono\\Middleware\\NotificationMiddleware' => null,
+        'Bono\\Middleware\\SessionMiddleware' => null,
+        'Bono\\Middleware\\ContentNegotiatorMiddleware' => array(
+            'extensions' => array(
+                'json' => 'application/json',
+            ),
+            'views' => array(
+                'application/json' => 'Bono\\View\\JsonView',
+            ),
+        ),
     ),
 
     'bono.theme' => array(
-        'class' => '\\ROH\\Theme\\BootstrapTheme',
+        'class' => 'ROH\\Theme\\BootstrapTheme',
         'overwrite' => true,
         'options' => array(
             'title' => 'XeeKee',
