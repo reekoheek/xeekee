@@ -4,20 +4,20 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e3ae38eb22bf3bfce74fe5e445f32b74",
+    "hash": "b1e13559d1dc5277d2c8c8e3ea645851",
     "packages": [
         {
             "name": "filp/whoops",
-            "version": "1.1.2",
+            "version": "1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "9f451fbc7b8cad5e71300672c340c28c6bec09ff"
+                "reference": "a85fab9a98f1f9b8ebcdbe71733f0d910e5b9adf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/9f451fbc7b8cad5e71300672c340c28c6bec09ff",
-                "reference": "9f451fbc7b8cad5e71300672c340c28c6bec09ff",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/a85fab9a98f1f9b8ebcdbe71733f0d910e5b9adf",
+                "reference": "a85fab9a98f1f9b8ebcdbe71733f0d910e5b9adf",
                 "shasum": ""
             },
             "require": {
@@ -62,7 +62,7 @@
                 "whoops",
                 "zf2"
             ],
-            "time": "2014-07-11 05:56:54"
+            "time": "2014-10-26 09:05:09"
         },
         {
             "name": "guzzle/guzzle",
@@ -157,72 +157,68 @@
             "time": "2014-01-28 22:29:15"
         },
         {
-            "name": "kzykhys/ciconia",
-            "version": "v1.0.3",
+            "name": "michelf/php-markdown",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/kzykhys/Ciconia.git",
-                "reference": "52d43ec35a656ef1bda07fdd8398081801f960ae"
+                "url": "https://github.com/michelf/php-markdown.git",
+                "reference": "de9a19c7bf352d41cc99ed86c3c0ef17e87394b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kzykhys/Ciconia/zipball/52d43ec35a656ef1bda07fdd8398081801f960ae",
-                "reference": "52d43ec35a656ef1bda07fdd8398081801f960ae",
+                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/de9a19c7bf352d41cc99ed86c3c0ef17e87394b6",
+                "reference": "de9a19c7bf352d41cc99ed86c3c0ef17e87394b6",
                 "shasum": ""
             },
             "require": {
-                "php": ">5.4.0",
-                "symfony/console": ">=2.3,<2.5-dev",
-                "symfony/options-resolver": ">=2.3,<2.5-dev"
+                "php": ">=5.3.0"
             },
-            "require-dev": {
-                "symfony/finder": ">=2.3,<2.5-dev",
-                "symfony/stopwatch": ">=2.3,<2.5-dev"
-            },
-            "bin": [
-                "bin/ciconia"
-            ],
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1.x-dev"
+                    "dev-lib": "1.4.x-dev"
                 }
             },
             "autoload": {
                 "psr-0": {
-                    "": "src/"
+                    "Michelf": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "MIT"
+                "BSD-3-Clause"
             ],
             "authors": [
                 {
-                    "name": "Kazuyuki Hayashi",
-                    "email": "hayashi@valnur.net"
+                    "name": "Michel Fortin",
+                    "email": "michel.fortin@michelf.ca",
+                    "homepage": "http://michelf.ca/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "John Gruber",
+                    "homepage": "http://daringfireball.net/"
                 }
             ],
-            "description": "The Markdown parser for PHP5.4",
+            "description": "PHP Markdown",
+            "homepage": "http://michelf.ca/projects/php-markdown/",
             "keywords": [
-                "cli",
-                "markdown",
-                "parser"
+                "markdown"
             ],
-            "time": "2014-01-23 08:14:37"
+            "time": "2014-05-05 02:43:50"
         },
         {
             "name": "reekoheek/bono-auth",
-            "version": "0.1.6",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reekoheek/bono-auth.git",
-                "reference": "0c71907291574c4830a8d2271df731935f033fb6"
+                "reference": "d384f8a3a01f46166bae2d49087eda3d0bc6824f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reekoheek/bono-auth/zipball/0c71907291574c4830a8d2271df731935f033fb6",
-                "reference": "0c71907291574c4830a8d2271df731935f033fb6",
+                "url": "https://api.github.com/repos/reekoheek/bono-auth/zipball/d384f8a3a01f46166bae2d49087eda3d0bc6824f",
+                "reference": "d384f8a3a01f46166bae2d49087eda3d0bc6824f",
                 "shasum": ""
             },
             "require": {
@@ -246,7 +242,7 @@
                 }
             ],
             "description": "Bono Auth",
-            "time": "2014-09-13 09:34:28"
+            "time": "2014-11-03 09:40:26"
         },
         {
             "name": "reekoheek/bootstrap-theme",
@@ -254,12 +250,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reekoheek/bootstrap-theme.git",
-                "reference": "060e9bfdebe0ba55771d4b7d82224cea8c28a0b9"
+                "reference": "2eb294f925276c02d2323d154793d4a88a619993"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reekoheek/bootstrap-theme/zipball/060e9bfdebe0ba55771d4b7d82224cea8c28a0b9",
-                "reference": "060e9bfdebe0ba55771d4b7d82224cea8c28a0b9",
+                "url": "https://api.github.com/repos/reekoheek/bootstrap-theme/zipball/2eb294f925276c02d2323d154793d4a88a619993",
+                "reference": "2eb294f925276c02d2323d154793d4a88a619993",
                 "shasum": ""
             },
             "type": "library",
@@ -279,7 +275,7 @@
                 }
             ],
             "description": "Bono Bootstrap Theme",
-            "time": "2014-09-12 13:44:31"
+            "time": "2014-10-09 11:11:07"
         },
         {
             "name": "reekoheek/jsonkit",
@@ -357,6 +353,72 @@
             ],
             "description": "PHP util library",
             "time": "2014-01-02 04:08:44"
+        },
+        {
+            "name": "rhumsaa/uuid",
+            "version": "2.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ramsey/uuid.git",
+                "reference": "cca98c652cac412c9c2f109c69e5532f313435fc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/cca98c652cac412c9c2f109c69e5532f313435fc",
+                "reference": "cca98c652cac412c9c2f109c69e5532f313435fc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "doctrine/dbal": ">=2.3",
+                "moontoast/math": "~1.1",
+                "phpunit/phpunit": "~4.1",
+                "satooshi/php-coveralls": "~0.6",
+                "symfony/console": "~2.3"
+            },
+            "suggest": {
+                "doctrine/dbal": "Allow the use of a UUID as doctrine field type.",
+                "moontoast/math": "Support for converting UUID to 128-bit integer (in string form).",
+                "symfony/console": "Support for use of the bin/uuid command line tool."
+            },
+            "bin": [
+                "bin/uuid"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Rhumsaa\\Uuid\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marijn Huizendveld",
+                    "email": "marijn.huizendveld@gmail.com"
+                },
+                {
+                    "name": "Ben Ramsey",
+                    "homepage": "http://benramsey.com"
+                }
+            ],
+            "description": "A PHP 5.3+ library for generating RFC 4122 version 1, 3, 4, and 5 universally unique identifiers (UUID).",
+            "homepage": "https://github.com/ramsey/uuid",
+            "keywords": [
+                "guid",
+                "identifier",
+                "uuid"
+            ],
+            "time": "2014-11-09 18:42:56"
         },
         {
             "name": "slim/slim",
@@ -456,71 +518,18 @@
             "time": "2014-08-14 14:51:32"
         },
         {
-            "name": "symfony/console",
-            "version": "v2.4.9",
-            "target-dir": "Symfony/Component/Console",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/Console.git",
-                "reference": "6cdbe19f8f9025a84ccc45c3870e388e424bea5c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/6cdbe19f8f9025a84ccc45c3870e388e424bea5c",
-                "reference": "6cdbe19f8f9025a84ccc45c3870e388e424bea5c",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "symfony/event-dispatcher": "~2.1"
-            },
-            "suggest": {
-                "symfony/event-dispatcher": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\Console\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                }
-            ],
-            "description": "Symfony Console Component",
-            "homepage": "http://symfony.com",
-            "time": "2014-08-14 14:51:32"
-        },
-        {
             "name": "symfony/event-dispatcher",
-            "version": "v2.5.4",
+            "version": "v2.6.1",
             "target-dir": "Symfony/Component/EventDispatcher",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "8faf5cc7e80fde74a650a36e60d32ce3c3e0457b"
+                "reference": "720fe9bca893df7ad1b4546649473b5afddf0216"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/8faf5cc7e80fde74a650a36e60d32ce3c3e0457b",
-                "reference": "8faf5cc7e80fde74a650a36e60d32ce3c3e0457b",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/720fe9bca893df7ad1b4546649473b5afddf0216",
+                "reference": "720fe9bca893df7ad1b4546649473b5afddf0216",
                 "shasum": ""
             },
             "require": {
@@ -529,7 +538,8 @@
             "require-dev": {
                 "psr/log": "~1.0",
                 "symfony/config": "~2.0",
-                "symfony/dependency-injection": "~2.0",
+                "symfony/dependency-injection": "~2.6",
+                "symfony/expression-language": "~2.6",
                 "symfony/stopwatch": "~2.2"
             },
             "suggest": {
@@ -539,7 +549,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
@@ -563,59 +573,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "http://symfony.com",
-            "time": "2014-07-28 13:20:46"
-        },
-        {
-            "name": "symfony/options-resolver",
-            "version": "v2.4.9",
-            "target-dir": "Symfony/Component/OptionsResolver",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/OptionsResolver.git",
-                "reference": "6ac54d42397de6e9cbb9d41ca426cd0d5fc419db"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/OptionsResolver/zipball/6ac54d42397de6e9cbb9d41ca426cd0d5fc419db",
-                "reference": "6ac54d42397de6e9cbb9d41ca426cd0d5fc419db",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\OptionsResolver\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                }
-            ],
-            "description": "Symfony OptionsResolver Component",
-            "homepage": "http://symfony.com",
-            "keywords": [
-                "config",
-                "configuration",
-                "options"
-            ],
-            "time": "2014-07-09 09:04:55"
+            "time": "2014-12-02 20:19:20"
         },
         {
             "name": "symfony/options-resolver",
@@ -675,12 +633,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/xinix-technology/bono.git",
-                "reference": "c0049ac11099416ed2b1eb986a061240b16d28e1"
+                "reference": "6f9b0eb9bdb644069571608f173d09a66ff4c95f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xinix-technology/bono/zipball/c0049ac11099416ed2b1eb986a061240b16d28e1",
-                "reference": "c0049ac11099416ed2b1eb986a061240b16d28e1",
+                "url": "https://api.github.com/repos/xinix-technology/bono/zipball/6f9b0eb9bdb644069571608f173d09a66ff4c95f",
+                "reference": "6f9b0eb9bdb644069571608f173d09a66ff4c95f",
                 "shasum": ""
             },
             "require": {
@@ -727,7 +685,7 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2014-09-13 09:33:08"
+            "time": "2014-12-10 09:34:53"
         },
         {
             "name": "xinix-technology/migrate",
@@ -773,19 +731,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/xinix-technology/norm.git",
-                "reference": "aa944c1d4b8c21186a0edfab2ea0e52656896537"
+                "reference": "8feadb94745be5634298e1dc64e5ebf1969ebe5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xinix-technology/norm/zipball/aa944c1d4b8c21186a0edfab2ea0e52656896537",
-                "reference": "aa944c1d4b8c21186a0edfab2ea0e52656896537",
+                "url": "https://api.github.com/repos/xinix-technology/norm/zipball/8feadb94745be5634298e1dc64e5ebf1969ebe5a",
+                "reference": "8feadb94745be5634298e1dc64e5ebf1969ebe5a",
                 "shasum": ""
             },
             "require": {
                 "reekoheek/jsonkit": "~0.0.1",
-                "reekoheek/util": ">=0.1.2"
+                "reekoheek/util": "~0.1.2",
+                "rhumsaa/uuid": "~2.7"
             },
             "require-dev": {
+                "guzzle/guzzle": "~3.8.1",
                 "phpdocumentor/phpdocumentor": "2.*",
                 "phpunit/phpunit": "3.7.22"
             },
@@ -818,7 +778,7 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2014-09-13 12:28:41"
+            "time": "2014-12-09 13:04:13"
         }
     ],
     "packages-dev": [],
@@ -828,9 +788,11 @@
         "xinix-technology/bono": 20,
         "xinix-technology/norm": 20,
         "xinix-technology/migrate": 20,
+        "reekoheek/bono-auth": 20,
         "reekoheek/bootstrap-theme": 20
     },
     "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": [],
     "platform-dev": []
 }
