@@ -16,7 +16,7 @@
         "xinix-technology/bono": "dev-master",
         "xinix-technology/norm": "dev-master",
         "xinix-technology/migrate": "dev-master",
-        "reekoheek/bono-auth": "~0.1.5",
+        "reekoheek/bono-auth": "dev-master",
         "reekoheek/bootstrap-theme": "dev-master",
         "kzykhys/ciconia": "~1.0.0"
     },

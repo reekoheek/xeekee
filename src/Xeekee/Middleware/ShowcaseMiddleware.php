@@ -25,8 +25,10 @@ class ShowcaseMiddleware extends \Slim\Middleware
 
             $entries->sort(array('title' => 1))->limit(25);
 
-            $app->response->set('entries', $entries);
-            $app->response->set('q', $q);
+            $app->response->data(array(
+                'entries' => $entries,
+                'q' => $q)
+            );
             $app->response->template('xeekee/showcase');
         });
 

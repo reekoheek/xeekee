@@ -22,7 +22,7 @@ class XeekeeMiddleware extends \Slim\Middleware
 
         $app->get('/admin/workspace/:id/members', function ($id) use ($app) {
             $entry = \Norm::factory('Workspace')->findOne($id);
-            $app->response->set('entry', $entry);
+            $app->response->data('entry', $entry);
             $app->response->template('admin/workspace/members');
         });
 
@@ -51,7 +51,7 @@ class XeekeeMiddleware extends \Slim\Middleware
                 h('notification.error', $e);
             }
 
-            $app->response->set('entry', $entry);
+            $app->response->data('entry', $entry);
             $app->response->template('admin/workspace/members');
         });
 
@@ -83,10 +83,10 @@ class XeekeeMiddleware extends \Slim\Middleware
         $xeekee = $this->get($pathInfo);
 
         if (!is_null($this->app->request->get('edit'))) {
-            $this->response->set('entry', $xeekee);
+            $this->response->data('entry', $xeekee);
             $this->response->template('xeekee/edit');
         } elseif ($xeekee->exists()) {
-            $this->response->set('entry', $xeekee);
+            $this->response->data('entry', $xeekee);
             $this->response->template('xeekee/read');
         } else {
             $this->app->redirect($pathInfo.'?edit');
